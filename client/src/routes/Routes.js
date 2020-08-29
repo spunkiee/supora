@@ -28,7 +28,7 @@ function App() {
           <PublicRoute restricted exact path="/signup" component={SignUp} />
           <PublicRoute
             restricted
-            path="/auth/activate/:token"
+            path="auth/activate/:token"
             exact
             component={Activate}
           />
