@@ -1,0 +1,496 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Navbar CSS */
+.navbar-brand {
+  color: #003a78 !important;
+  font-size: 26px;
+  font-weight: 700;
+}
+.navbar-item {
+  color: #4b4b97;
+  margin: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.navbar-item:hover {
+  border-bottom: 3px solid #fdb811;
+  padding-bottom: 4px;
+}
+.nav-background {
+  background-color: #ffffff;
+}
+.nav-logo {
+  padding: 0px;
+}
+/* Media Query for nav Bar */
+@media (max-width: 983px) and (min-width: 768px) {
+  .navbar-item {
+    margin: 5px;
+  }
+}
+
+/* Sign In Form */
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signup-image-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signup-image-container img {
+  width: 100%;
+  height: 100%;
+}
+.signup-form-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.signup-form-heading {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #003a78;
+  margin-top: 60px;
+}
+.signup-form-fields {
+  width: 80%;
+  margin-top: -100px;
+}
+.form-image-container img {
+  width: 100%;
+  height: 80%;
+}
+.signup-button {
+  background-color: #003a78;
+  padding: 10px 36px;
+  color: white;
+}
+#add-issue-button:focus {
+  outline: none;
+}
+.forgot-password {
+  color: #003a78 !important;
+}
+.forgot-password:hover {
+  border-bottom: 2px solid #fdb811;
+}
+/* Media Query for Sign In Form */
+@media (max-width: 890px) {
+  .signup-container {
+    width: 90%;
+  }
+  .signup-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .signup-image-container {
+    width: 100%;
+  }
+  .signup-form-container {
+    width: 100%;
+  }
+  .signup-form-fields {
+    width: 90%;
+    margin-top: -250px;
+  }
+  .signup-form-heading {
+    margin-top: -50px;
+  }
+}
+@media (max-width: 640px) and (min-width: 360px) {
+  .signup-form-heading {
+    margin-top: -180px;
+  }
+  .signup-form-fields {
+    margin-top: -300px;
+  }
+}
+
+/* Footer CSS */
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #002348;
+}
+.services-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media {
+  width: 100%;
+  color: #bcccdd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.line {
+  width: 85%;
+  border-bottom: 1.5px solid #bcccdd;
+}
+.right-reserved {
+  width: 85%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #bcccdd;
+}
+.servises-item {
+  color: #bcccdd;
+  margin: 30px 40px;
+  margin-top: 50px;
+  cursor: pointer;
+  display: block;
+}
+a:hover {
+  text-decoration: none;
+}
+.social-icon {
+  margin: 20px;
+  display: block;
+}
+.name-footer:hover {
+  border-bottom: 2px solid #fdb811;
+  cursor: pointer;
+}
+/* Media Query For Footer  */
+@media (max-width: 890px) {
+  .footer-container {
+    margin-top: 500px;
+  }
+}
+@media (max-width: 600px) and (min-width: 350px) {
+  .servises-item {
+    margin: 30px 20px;
+    margin-top: 50px;
+  }
+  .social-icon {
+    margin: 20px 10px;
+  }
+}
+
+/* CSS for Sign Up Form */
+/* Media Query for Sign In Form */
+@media (max-width: 890px) and (min-width: 641px) {
+  .signup-fields-media-query {
+    margin-top: 0px;
+  }
+  .signup-heading-media-query {
+    margin-top: 80px;
+  }
+  .footer-signup-media-query {
+    margin-top: 650px;
+  }
+}
+@media (max-width: 1500px) and (min-width: 891px) {
+  .signup-heading-media-query {
+    margin-top: -50px;
+  }
+}
+
+/* Account Activation CSS */
+/* .activation-footer {
+  position: sticky;
+  bottom: 0px;
+} */
+.activation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50vh;
+  font-size: 30px;
+  color: #002348;
+}
+.activation-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.activation-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Forgot Password CSS */
+.forgot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50vh;
+  font-size: 30px;
+  color: #002348;
+}
+.forgot-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.forgot-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset Password CSS  */
+.reset-container {
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 30px;
+  color: #002348;
+}
+.reset-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.reset-input-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Support Form CSS */
+.support-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.support-container {
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.support-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.support-image img {
+  width: 100%;
+  height: 80%;
+}
+.support-form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.support-form-heading {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #003a78;
+}
+.support-form-fields {
+  width: 80%;
+}
+
+/* Dashboard CSS */
+.dashboard-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.dashboard-container {
+  width: 80%;
+}
+.dashboard-heading {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: 600;
+  color: #003a78;
+  margin: 20px 50px;
+}
+.dashboard-table-header {
+  font-size: 20px;
+  color: #003a78;
+}
+.data-desc {
+  font-size: 20px;
+  color: #003a78;
+}
+.data-description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* Home CSS */
+.home-container {
+  margin-bottom: 0px;
+}
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carousel-position {
+  width: 100%;
+}
+
+/* About Inside Home CSS */
+.about-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.about-heading {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-main-heading {
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #003a78;
+}
+.about-sub-heading {
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-card-container {
+  width: 100%;
+  height: 50vh;
+}
+.about-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  width: 20%;
+  border: none;
+}
+.card-img,
+.card-heading,
+.card-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.card-img {
+  margin-bottom: 25px;
+}
+.card-img img {
+  width: 80px;
+  height: 80px;
+}
+.card-heading {
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Contact Page CSS */
+.contact-page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact-container {
+  display: flex;
+  height: 90vh;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+.contact-text {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-img {
+  width: 50%;
+  height: 100%;
+}
+.contact-img img {
+  width: 100%;
+  height: 100%;
+}
+.contact-text-heading {
+  width: 100%;
+  font-size: 50px;
+  font-weight: 800;
+  color: #003a78;
+}
+.contact-text-para {
+  font-size: 20px;
+  color: #4b4b4b;
+}
